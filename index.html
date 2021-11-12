@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Nike Diwali Special</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+	<div class="card">
+		<div class="imgBx">
+			<img  id="myImage" src="img.png">
+		</div>
+		<div class="contentBx">
+			<h2>Nike Shoe</h2>
+			<div class="size">
+				<h3>Size :</h3>
+				<span>7</span>
+				<span>8</span>
+				<span>9</span>
+				<span>10</span>
+			</div>
+			<div class="color">
+				<h3> Color :</h3>
+				<span onclick="changeImaga()"></span>
+				<span onclick="changeImage()"></span>
+				<span onclick="changeImages()"><a ></a></span>
+			</div>
+			<a href="https://www.nike.com/in/" target="blank" class="btn">Buy now</a>
+		</div>
+	</div>
+</div>
+
+
+<script>
+function changeImage() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("img")) {
+    image.src = "img1.png";
+  } else if(image.src.match("img33")) {
+    image.src = "img1.png";
+  } else{
+  	image.src = "img.png"
+  }
+}
+
+function changeImaga() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("img1")) {
+    image.src = "img.png";
+  } else if(image.src.match("img2")) {
+    image.src = "img.png";
+  }else{
+  	image.src = "img.png"
+  }
+}
+
+function changeImages() {
+  var image = document.getElementById('myImage');
+  if (image.src.match("img1")) {
+    image.src = "img2.png";
+  } else if(image.src.match("img")) {
+    image.src = "img2.png";
+  }else{
+  	image.src = "img.png"
+  }
+}
+
+
+</script>
+</body>
+</html>
